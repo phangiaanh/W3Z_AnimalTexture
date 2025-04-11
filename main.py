@@ -195,6 +195,8 @@ import os
 import yaml
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
+import shutil
+import zipfile
 
 MESH_SHAPE = ["mesh_felidae_02.obj", "mesh_felidae_01.obj", "mesh_canidae.obj", "mesh_equidae.obj", "mesh_bovidae.obj", "mesh_hippopotamus.obj"]
 
@@ -264,13 +266,24 @@ def generate_configs():
             print(f"Generated config: {config_path}")
 
 def run_texture_generation(config_path):
-    """Run texture generation for a single config file"""
+    """Run texture generation for a single config file and cleanup vis folder"""
     try:
+        # Run texture generation
         command = f"python -m scripts.run_texture --config_path={config_path}"
         print(f"Running: {command}")
         process = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         print(f"Successfully completed texture generation for {config_path}")
         print(process.stdout)
+        
+        # Clean up vis folder
+        # Extract animal ID from config path
+        animal_id = os.path.splitext(os.path.basename(config_path))[0]
+        vis_path = os.path.join("experiments", animal_id, "vis")
+        if os.path.exists(vis_path):
+            print(f"Removing visualization folder: {vis_path}")
+            shutil.rmtree(vis_path)
+            print(f"Successfully removed {vis_path}")
+            
     except subprocess.CalledProcessError as e:
         print(f"Error running texture generation for {config_path}")
         print(f"Error output: {e.stderr}")
@@ -296,11 +309,36 @@ def generate_all_textures():
         run_texture_generation(config_path)
     
 
+def cleanup_and_zip_experiments():
+    experiments_dir = "experiments"
+    
+    # Check if experiments directory exists
+    if not os.path.exists(experiments_dir):
+        print("Experiments directory not found!")
+        return
+    
+    # Create zip file
+    zip_path = "experiments.zip"
+    print(f"Creating zip file: {zip_path}")
+    
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        # Walk through the experiments directory
+        for root, dirs, files in os.walk(experiments_dir):
+            for file in files:
+                file_path = os.path.join(root, file)
+                # Add file to zip with relative path
+                arcname = os.path.relpath(file_path, start=os.path.dirname(experiments_dir))
+                print(f"Adding to zip: {arcname}")
+                zipf.write(file_path, arcname)
+    
+    print(f"Successfully created {zip_path}")
+
 if __name__ == "__main__":
-    # First download shapes and generate configs
+    # First run the texture generation
     download_shapes()
     generate_configs()
-    
-    # Then run texture generation
     generate_all_textures()
+    
+    # Then cleanup and zip results
+    cleanup_and_zip_experiments()
             
