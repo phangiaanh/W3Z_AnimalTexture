@@ -2,47 +2,47 @@ ANIMAL_METADATA = {
     "felidae": {
         "lion": {
             "id": "lion",
-            "shape": "mesh_felidae_01.obj",  
+            "shape": "mesh_felidae_02.obj",  
             "description": "Adult African Lion, {} view"
         },
         "leopard": {
             "id": "leopard",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult African Leopard, {} view"
         },
         "snow_leopard": {
             "id": "snow_leopard",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Snow Leopard, {} view"
         },
         "caracal": {
             "id": "caracal",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Caracal, {} view"
         },
         "lynx": {
             "id": "lynx",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Eurasian Lynx, {} view"
         },
         "puma_cougar": {
             "id": "puma_cougar",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Puma/Mountain Lion, {} view"
         },
         "felis_cat": {
             "id": "felis_cat",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Domestic Cat, {} view"
         },
         "leopardus_cat": {
             "id": "leopardus_cat",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Ocelot/Margay, {} view"
         },
         "prionailurus": {
             "id": "prionailurus",
-            "shape": "mesh_felidae_02.obj",
+            "shape": "mesh_felidae_01.obj",
             "description": "Adult Fishing Cat, {} view"
         }
     },
@@ -196,7 +196,7 @@ import yaml
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
-MESH_SHAPE = ["mesh_felidae_01.obj", "mesh_felidae_02.obj", "mesh_canidae.obj", "mesh_equidae.obj", "mesh_bovidae.obj", "mesh_hippopotamus.obj"]
+MESH_SHAPE = ["mesh_felidae_02.obj", "mesh_felidae_01.obj", "mesh_canidae.obj", "mesh_equidae.obj", "mesh_bovidae.obj", "mesh_hippopotamus.obj"]
 
 
 def download_shapes():
