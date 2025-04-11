@@ -1,0 +1,9 @@
+accelerate
+huggingface-hub
+ninja
+xatlas
+imageio
+pyrallis
+loguru
+tqdm
+einops
