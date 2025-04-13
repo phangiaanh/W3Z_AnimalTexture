@@ -1,190 +1,200 @@
+# ANIMAL_METADATA = {
+#     "felidae": {
+#         "lion": {
+#             "id": "lion",
+#             "shape": "mesh_felidae_02.obj",  
+#             "description": "Adult African Lion, {} view"
+#         },
+#         "leopard": {
+#             "id": "leopard",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult African Leopard, {} view"
+#         },
+#         "snow_leopard": {
+#             "id": "snow_leopard",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Snow Leopard, {} view"
+#         },
+#         "caracal": {
+#             "id": "caracal",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Caracal, {} view"
+#         },
+#         "lynx": {
+#             "id": "lynx",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Eurasian Lynx, {} view"
+#         },
+#         "puma_cougar": {
+#             "id": "puma_cougar",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Puma/Mountain Lion, {} view"
+#         },
+#         "felis_cat": {
+#             "id": "felis_cat",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Domestic Cat, {} view"
+#         },
+#         "leopardus_cat": {
+#             "id": "leopardus_cat",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Ocelot/Margay, {} view"
+#         },
+#         "prionailurus": {
+#             "id": "prionailurus",
+#             "shape": "mesh_felidae_01.obj",
+#             "description": "Adult Fishing Cat, {} view"
+#         }
+#     },
+    
+#     "canidae": {
+#         "dalmatian": {
+#             "id": "dalmatian",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Dalmatian Dog, {} view"
+#         },
+#         "australian_shepherd": {
+#             "id": "australian_shepherd",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Australian Shepherd Dog, {} view"
+#         },
+#         "catahoula_leopard": {
+#             "id": "catahoula_leopard",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Catahoula Leopard Dog, {} view"
+#         },
+#         "komondor": {
+#             "id": "komondor",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Komondor Dog, {} view"
+#         },
+#         "black_tan_coonhound": {
+#             "id": "black_tan_coonhound",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Black and Tan Coonhound Dog, {} view"
+#         },
+#         "dapple_dachshund": {
+#             "id": "dapple_dachshund",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Dapple Dachshund Dog, {} view"
+#         },
+#         "american_hairless": {
+#             "id": "american_hairless",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult American Hairless Terrier Dog, {} view"
+#         },
+#         "keeshond": {
+#             "id": "keeshond",
+#             "shape": "mesh_canidae.obj",
+#             "description": "Adult Keeshond Dog, {} view"
+#         }
+#     },
+    
+#     "equidae": {
+#         "bay_thoroughbred": {
+#             "id": "bay_thoroughbred",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Bay Thoroughbred Horse, {} view"
+#         },
+#         "palomino_quarter": {
+#             "id": "palomino_quarter",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Palomino Quarter Horse, {} view"
+#         },
+#         "chestnut_morgan": {
+#             "id": "chestnut_morgan",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Chestnut Morgan Horse, {} view"
+#         },
+#         "buckskin_tennessee": {
+#             "id": "buckskin_tennessee",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Buckskin Tennessee Walking Horse, {} view"
+#         },
+#         "white_arabian": {
+#             "id": "white_arabian",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult White Arabian Horse, {} view"
+#         },
+#         "black_friesian": {
+#             "id": "black_friesian",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Black Friesian Horse, {} view"
+#         },
+#         "dapple_andalusian": {
+#             "id": "dapple_andalusian",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Dapple Gray Andalusian Horse, {} view"
+#         },
+#         "pinto_paint": {
+#             "id": "pinto_paint",
+#             "shape": "mesh_equidae.obj",
+#             "description": "Adult Pinto Paint Horse, {} view"
+#         }
+#     },
+    
+#     "bovidae": {
+#         "jersey": {
+#             "id": "jersey",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Jersey Cow, {} view"
+#         },
+#         "sahiwal": {
+#             "id": "sahiwal",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Sahiwal Cow, {} view"
+#         },
+#         "holstein_friesian": {
+#             "id": "holstein_friesian",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Holstein Friesian Cow, {} view"
+#         },
+#         "brahman": {
+#             "id": "brahman",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Brahman Cow, {} view"
+#         },
+#         "ayrshire": {
+#             "id": "ayrshire",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Ayrshire Cow, {} view"
+#         },
+#         "guernsey": {
+#             "id": "guernsey",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Guernsey Cow, {} view"
+#         },
+#         "brown_swiss": {
+#             "id": "brown_swiss",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Brown Swiss Cow, {} view"
+#         },
+#         "charolais": {
+#             "id": "charolais",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Charolais Cow, {} view"
+#         },
+#         "angus": {
+#             "id": "angus",
+#             "shape": "mesh_bovidae.obj",
+#             "description": "Adult Angus Cow, {} view"
+#         }
+#     },
+    
+#     "hippopotamus": {
+#         "hippo": {
+#             "id": "hippo",
+#             "shape": "mesh_hippopotamus.obj",
+#             "description": "Adult Hippo, {} view"
+#         }
+#     }
+# }
+
 ANIMAL_METADATA = {
-    "felidae": {
-        "lion": {
-            "id": "lion",
-            "shape": "mesh_felidae_02.obj",  
-            "description": "Adult African Lion, {} view"
-        },
-        "leopard": {
-            "id": "leopard",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult African Leopard, {} view"
-        },
-        "snow_leopard": {
-            "id": "snow_leopard",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Snow Leopard, {} view"
-        },
-        "caracal": {
-            "id": "caracal",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Caracal, {} view"
-        },
-        "lynx": {
-            "id": "lynx",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Eurasian Lynx, {} view"
-        },
-        "puma_cougar": {
-            "id": "puma_cougar",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Puma/Mountain Lion, {} view"
-        },
-        "felis_cat": {
-            "id": "felis_cat",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Domestic Cat, {} view"
-        },
-        "leopardus_cat": {
-            "id": "leopardus_cat",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Ocelot/Margay, {} view"
-        },
-        "prionailurus": {
-            "id": "prionailurus",
-            "shape": "mesh_felidae_01.obj",
-            "description": "Adult Fishing Cat, {} view"
-        }
-    },
-    
-    "canidae": {
-        "dalmatian": {
-            "id": "dalmatian",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Dalmatian Dog, {} view"
-        },
-        "australian_shepherd": {
-            "id": "australian_shepherd",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Australian Shepherd Dog, {} view"
-        },
-        "catahoula_leopard": {
-            "id": "catahoula_leopard",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Catahoula Leopard Dog, {} view"
-        },
-        "komondor": {
-            "id": "komondor",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Komondor Dog, {} view"
-        },
-        "black_tan_coonhound": {
-            "id": "black_tan_coonhound",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Black and Tan Coonhound Dog, {} view"
-        },
-        "dapple_dachshund": {
-            "id": "dapple_dachshund",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Dapple Dachshund Dog, {} view"
-        },
-        "american_hairless": {
-            "id": "american_hairless",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult American Hairless Terrier Dog, {} view"
-        },
-        "keeshond": {
-            "id": "keeshond",
-            "shape": "mesh_canidae.obj",
-            "description": "Adult Keeshond Dog, {} view"
-        }
-    },
-    
-    "equidae": {
-        "bay_thoroughbred": {
-            "id": "bay_thoroughbred",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Bay Thoroughbred Horse, {} view"
-        },
-        "palomino_quarter": {
-            "id": "palomino_quarter",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Palomino Quarter Horse, {} view"
-        },
-        "chestnut_morgan": {
-            "id": "chestnut_morgan",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Chestnut Morgan Horse, {} view"
-        },
-        "buckskin_tennessee": {
-            "id": "buckskin_tennessee",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Buckskin Tennessee Walking Horse, {} view"
-        },
-        "white_arabian": {
-            "id": "white_arabian",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult White Arabian Horse, {} view"
-        },
-        "black_friesian": {
-            "id": "black_friesian",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Black Friesian Horse, {} view"
-        },
-        "dapple_andalusian": {
-            "id": "dapple_andalusian",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Dapple Gray Andalusian Horse, {} view"
-        },
-        "pinto_paint": {
-            "id": "pinto_paint",
-            "shape": "mesh_equidae.obj",
-            "description": "Adult Pinto Paint Horse, {} view"
-        }
-    },
-    
-    "bovidae": {
-        "jersey": {
-            "id": "jersey",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Jersey Cow, {} view"
-        },
-        "sahiwal": {
-            "id": "sahiwal",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Sahiwal Cow, {} view"
-        },
-        "holstein_friesian": {
-            "id": "holstein_friesian",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Holstein Friesian Cow, {} view"
-        },
-        "brahman": {
-            "id": "brahman",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Brahman Cow, {} view"
-        },
-        "ayrshire": {
-            "id": "ayrshire",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Ayrshire Cow, {} view"
-        },
-        "guernsey": {
-            "id": "guernsey",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Guernsey Cow, {} view"
-        },
-        "brown_swiss": {
-            "id": "brown_swiss",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Brown Swiss Cow, {} view"
-        },
-        "charolais": {
-            "id": "charolais",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Charolais Cow, {} view"
-        },
-        "angus": {
-            "id": "angus",
-            "shape": "mesh_bovidae.obj",
-            "description": "Adult Angus Cow, {} view"
-        }
-    },
-    
-    "hippopotamidae": {
+    "hippopotamus": {
         "hippo": {
             "id": "hippo",
-            "shape": "mesh_hippopotamidae.obj",
+            "shape": "mesh_hippopotamus.obj",
             "description": "Adult Hippo, {} view"
         }
     }
