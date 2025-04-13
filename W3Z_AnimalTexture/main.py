@@ -210,6 +210,61 @@ import zipfile
 
 MESH_SHAPE = ["mesh_felidae_02.obj", "mesh_felidae_01.obj", "mesh_canidae.obj", "mesh_equidae.obj", "mesh_bovidae.obj", "mesh_hippopotamus.obj"]
 
+SHAPE_TO_ANIMALS = {
+    "felidae": {
+        "felidae_02": ["lion"],
+        "felidae_01": [
+            "leopard",
+            "snow_leopard",
+            "caracal",
+            "lynx",
+            "puma_cougar",
+            "felis_cat",
+            "leopardus_cat",
+            "prionailurus"
+        ],
+    },
+    "canidae": {
+        "canidae": [
+            "dalmatian",
+            "australian_shepherd",
+            "catahoula_leopard",
+            "komondor",
+            "black_tan_coonhound",
+            "dapple_dachshund",
+            "american_hairless",
+            "keeshond"
+        ]
+    },
+    "equidae": {
+        "equidae": [
+            "bay_thoroughbred",
+            "palomino_quarter",
+            "chestnut_morgan",
+            "buckskin_tennessee",
+            "white_arabian",
+            "black_friesian",
+            "dapple_andalusian",
+            "pinto_paint"
+        ]
+    },
+    "bovidae": {
+        "bovidae": [
+            "jersey",
+            "sahiwal",
+            "holstein_friesian",
+            "brahman",
+            "ayrshire",
+            "guernsey",
+            "brown_swiss",
+            "charolais",
+            "angus"
+    ]
+    },
+    "hippopotamus": {
+        "hippopotamus": ["hippo"]
+    }
+}
 
 def download_shapes():
     # Create shapes directory if it doesn't exist
