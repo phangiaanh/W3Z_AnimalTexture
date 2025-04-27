@@ -211,9 +211,22 @@ import zipfile
 MESH_SHAPE = ["mesh_felidae_02.obj", "mesh_felidae_01.obj", "mesh_canidae.obj", "mesh_equidae.obj", "mesh_bovidae.obj", "mesh_hippopotamus.obj"]
 
 SHAPE_TO_ANIMALS = {
+    # "felidae": {
+    #     "felidae_02": ["lion"],
+    #     "felidae_01": [
+    #         "leopard",
+    #         "snow_leopard",
+    #         "caracal",
+    #         "lynx",
+    #         "puma_cougar",
+    #         "felis_cat",
+    #         "leopardus_cat",
+    #         "prionailurus"
+    #     ],
+    # },
     "felidae": {
-        "felidae_02": ["lion"],
-        "felidae_01": [
+        "felidae": [
+            # "lion",
             "leopard",
             "snow_leopard",
             "caracal",
